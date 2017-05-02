@@ -4,6 +4,7 @@
   "description": "Khai learn QMake",
   "main": "index.js",
   "scripts": {
+    "test": "npm run clean && npm run start",
     "clean": "git clean -Xdf",
     "start": "bash start.bash"
   },

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "git clean -Xdf",
-    "test": "qmake-qt5 -o Makefile .pro && make && ./main.out"
+    "test": "bash test.bash"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,6 @@
+*.stash
+qmake.*
+Makefile
+*.mk
+*.o
+*.out

@@ -4,7 +4,8 @@
 
 class Hello {
   public:
-    Hello ();
+    Hello (int, char **);
+    int status;
 };
 
 #endif

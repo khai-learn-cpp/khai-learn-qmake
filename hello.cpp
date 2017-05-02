@@ -3,10 +3,12 @@
 #define __HELLO_CPP
 
 #include "hello.hpp"
-#include <iostream>
+#include <QApplication>
+#include <QPushButton>
 
-Hello::Hello () {
-  std::cout << "Hello, World!!\n";
+Hello::Hello (int argc, char ** argv) {
+  QApplication app(argc, argv);
+  status = app.exec();
 }
 
 #endif

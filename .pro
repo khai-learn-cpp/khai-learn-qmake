@@ -1,3 +1,5 @@
+TEMPLATE += app
+QT += core gui widgets
 CONFIG += qt
 HEADERS += hello.hpp
 SOURCES += hello.cpp

@@ -1,6 +1,6 @@
 #include "hello.hpp"
 
-int main () {
-  Hello();
-  return 0;
+int main (int argc, char ** argv) {
+  Hello hello(argc, argv);
+  return hello.status;
 }

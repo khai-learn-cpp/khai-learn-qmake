@@ -4,6 +4,7 @@
   "description": "Khai learn QMake",
   "main": "index.js",
   "scripts": {
+    "clean": "git clean -Xdf",
     "test": "qmake-qt5 -o Makefile .pro && make && ./main.out"
   },
   "repository": {

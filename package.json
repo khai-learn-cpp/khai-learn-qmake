@@ -1,0 +1,19 @@
+{
+  "name": "khai-learn-qmake",
+  "version": "0.0.0",
+  "description": "Khai learn QMake",
+  "main": "index.js",
+  "scripts": {
+    "test": "qmake -o Makefile .pro && make && ./main.out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khai-learn-cpp/khai-learn-qmake.git"
+  },
+  "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khai-learn-cpp/khai-learn-qmake/issues"
+  },
+  "homepage": "https://github.com/khai-learn-cpp/khai-learn-qmake#readme"
+}

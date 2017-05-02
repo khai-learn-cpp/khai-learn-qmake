@@ -3,16 +3,17 @@
 #define __HELLO_CPP
 
 #include "hello.hpp"
-
-App::App (int argc, char ** argv) :
-  QApplication(argc, argv), label("Hello, World!!")
-{
-  window.setCentralWidget(&label);
-  window.show();
-}
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QLabel>
 
 Hello::Hello (int argc, char ** argv) {
-  status = App(argc, argv).exec();
+  QApplication app(argc, argv);
+  QMainWindow window;
+  QLabel label("Hello, World!!");
+  window.setCentralWidget(&label);
+  window.show();
+  app.exec();
 }
 
 #endif

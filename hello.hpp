@@ -2,16 +2,13 @@
 #ifndef __HELLO_HPP
 #define __HELLO_HPP
 
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QMainWindow>
-#include <QtWidgets/QLabel>
-#include "lib/utils.hpp"
+#include "lib/widgets.hpp"
 
 class Hello {
 private:
-  typedef lib::utils::DerivedClass<QApplication> App;
-  typedef lib::utils::DerivedClass<QMainWindow> MainWin;
-  typedef lib::utils::DerivedClass<QLabel> Label;
+  typedef lib::utils::DerivedClass<lib::widgets::App> App;
+  typedef lib::utils::DerivedClass<lib::widgets::MainWin> MainWin;
+  typedef lib::utils::DerivedClass<lib::widgets::Label> Label;
 
 public:
   Hello (int, char **);

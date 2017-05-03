@@ -11,6 +11,9 @@
     then
       echo ':: Executing output...'
       ./main.out
+      status=$?
+      echo "!! Program terminated with code $status"
+      exit $status
     else
       echo '!! Skip output execution'
   fi

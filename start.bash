@@ -12,7 +12,7 @@
       echo ':: Executing output...'
       ./main.out
     else
-      echo ':: Skip output execution'
+      echo '!! Skip output execution'
   fi
 ) && (
   echo 'Done.'

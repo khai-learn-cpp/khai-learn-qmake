@@ -5,7 +5,6 @@
 #include <experimental/optional>
 
 namespace lib::utils {
-
   template <class Base>
   struct DerivedClass : public Base {
     template <typename ...Args> DerivedClass (Args & ...args) : Base(args ...) {}
@@ -18,13 +17,14 @@ namespace lib::utils {
   class Optional : public Nullable<Base> {
   private:
     typedef Nullable<Base> NBase;
+
   public:
     template <typename ...Args> Optional (Args ...args) : NBase(args ...) {}
+
     operator Base () {
       return NBase::value_or(byDefault);
     }
   };
-
 }
 
 #endif

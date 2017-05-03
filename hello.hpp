@@ -7,7 +7,7 @@
 #include <QtWidgets/QLabel>
 
 template <class Base>
-struct SubClass : Base {
+struct SubClass : public Base {
   template <typename ...Args> SubClass (Args ...args) : Base(args ...) {}
 };
 

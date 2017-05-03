@@ -10,13 +10,13 @@
 
 class Hello {
 private:
-  typedef DerivedClass<QApplication> App;
-  typedef DerivedClass<QMainWindow> MainWin;
-  typedef DerivedClass<QLabel> Label;
+  typedef lib::utils::DerivedClass<QApplication> App;
+  typedef lib::utils::DerivedClass<QMainWindow> MainWin;
+  typedef lib::utils::DerivedClass<QLabel> Label;
 
 public:
   Hello (int, char **);
-  Optional<int, -1> status;
+  lib::utils::Optional<int, -1> status;
 };
 
 #endif

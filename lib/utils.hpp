@@ -2,6 +2,8 @@
 #ifndef __LIB_UTILS_HPP
 #define __LIB_UTILS_HPP
 
+namespace lib::utils {
+
 template <class Base>
 struct DerivedClass : public Base {
   template <typename ...Args> DerivedClass (Args & ...args) : Base(args ...) {}
@@ -20,5 +22,7 @@ public:
     return NBase::value_or(byDefault);
   }
 };
+
+}
 
 #endif

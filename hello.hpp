@@ -6,9 +6,6 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QLabel>
 
-// template <class Base>
-// using SubClass = Base;
-
 template <class Base>
 struct SubClass : Base {
   template <typename ...Args> SubClass (Args ...args) : Base(args ...) {}

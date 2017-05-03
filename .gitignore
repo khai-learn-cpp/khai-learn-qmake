@@ -4,3 +4,4 @@ Makefile
 *.mk
 *.o
 *.out
+*.user

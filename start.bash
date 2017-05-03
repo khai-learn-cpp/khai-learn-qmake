@@ -7,8 +7,13 @@
   echo ':: Running make...'
   make
 ) && (
-  echo ':: Executing output...'
-  ./main.out
+  if [[ -z $SKIP_OUTPUT_EXECUTION ]]
+    then
+      echo ':: Executing output...'
+      ./main.out
+    else
+      echo ':: Skip output execution'
+  fi
 ) && (
   echo 'Done.'
 ) || (

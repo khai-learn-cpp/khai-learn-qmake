@@ -8,7 +8,7 @@
 
 template <class Base>
 struct DerivedClass : public Base {
-  template <typename ...Args> DerivedClass (Args ...args) : Base(args ...) {}
+  template <typename ...Args> DerivedClass (Args & ...args) : Base(args ...) {}
 };
 
 class Hello {

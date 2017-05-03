@@ -7,15 +7,15 @@
 #include <QtWidgets/QLabel>
 
 template <class Base>
-struct SubClass : public Base {
-  template <typename ...Args> SubClass (Args ...args) : Base(args ...) {}
+struct DerivedClass : public Base {
+  template <typename ...Args> DerivedClass (Args ...args) : Base(args ...) {}
 };
 
 class Hello {
 private:
   typedef QApplication App;
-  typedef SubClass<QMainWindow> MainWin;
-  typedef SubClass<QLabel> Label;
+  typedef DerivedClass<QMainWindow> MainWin;
+  typedef DerivedClass<QLabel> Label;
 
 public:
   Hello (int, char **);

@@ -16,13 +16,13 @@ template <typename Base>
 using Nullable = std::experimental::optional<Base>;
 
 template <typename Base, Base byDefault>
-class Optional {
+class Optional : public Nullable<Base> {
 private:
-  Nullable<Base> base;
+  typedef Nullable<Base> NBase;
 public:
-  template <typename ...Args> Optional (Args ...args) : base(args ...) {}
+  template <typename ...Args> Optional (Args ...args) : NBase(args ...) {}
   operator Base () {
-    return base.value_or(byDefault);
+    return NBase::value_or(byDefault);
   }
 };
 

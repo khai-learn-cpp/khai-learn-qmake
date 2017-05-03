@@ -13,7 +13,7 @@ struct DerivedClass : public Base {
 
 class Hello {
 private:
-  typedef QApplication App;
+  typedef DerivedClass<QApplication> App;
   typedef DerivedClass<QMainWindow> MainWin;
   typedef DerivedClass<QLabel> Label;
 

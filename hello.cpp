@@ -10,7 +10,7 @@ Hello::Hello (int argc, char ** argv) {
   Label label("Hello, World!!");
   window.setCentralWidget(&label);
   window.show();
-  app.exec();
+  status = app.exec();
 }
 
 #endif

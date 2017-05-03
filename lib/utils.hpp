@@ -2,6 +2,8 @@
 #ifndef __LIB_UTILS_HPP
 #define __LIB_UTILS_HPP
 
+#include <experimental/optional>
+
 namespace lib::utils {
 
 template <class Base>

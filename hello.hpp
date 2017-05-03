@@ -5,7 +5,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QLabel>
-#include <experimental/optional>
 #include "lib/utils.hpp"
 
 class Hello {

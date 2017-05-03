@@ -5,7 +5,7 @@
 #include "hello.hpp"
 
 Hello::Hello (int argc, char ** argv) {
-  QApplication app(argc, argv);
+  App app(argc, argv);
   MainWin window;
   Label label("Hello, World!!");
   window.setCentralWidget(&label);

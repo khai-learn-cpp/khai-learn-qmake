@@ -16,7 +16,7 @@ struct SubClass : Base {
 
 class Hello {
 private:
-  typedef SubClass<QApplication> App;
+  typedef QApplication App;
   typedef SubClass<QMainWindow> MainWin;
   typedef SubClass<QLabel> Label;
 
